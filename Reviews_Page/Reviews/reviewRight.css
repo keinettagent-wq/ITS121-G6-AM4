@@ -1,0 +1,94 @@
+.rightBody h2,
+.reviewPage h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    Opacity: 0;                    
+    animation: slideUp 0.6s ease forwards; 
+    animation-delay: 0.9s; 
+}
+
+.customerPhoto {
+    margin-bottom: 30px;
+    text-align: center;
+    Opacity: 0;                    
+    animation: slideUp 0.6s ease forwards; 
+}
+
+.customerPhoto img {
+    max-height: 300px; 
+    max-width: 100%;     
+    width: 100%;       
+    display: block;
+    margin: 0 auto 10px 0; 
+    border-radius: 5px;
+    object-fit: cover; 
+}
+
+.customerPhoto .caption {
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.2;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-bottom: 30px;
+}
+
+.customerPhoto .credit {
+    display: block;
+    font-weight: bold;
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Facebook */
+.reviewPage {
+    text-align: center; 
+}
+
+
+.reviewPage p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: justify;  
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 10px;
+    border-radius:5px;
+}
+
+.fbReviewBtn {
+    display: inline-block;  
+    width: 100%;      
+    padding: 10px 20px;
+    background-color: #000;     
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+.fbReviewBtn:hover {
+    background-color: #555;     
+}
+
+/* animation delays */
+.customerPhoto {
+    margin-bottom: 30px;
+    text-align: center;
+    opacity: 0;                    
+    animation: slideUp 0.6s ease forwards;
+    animation-delay: 0.8s;  
+}
+
+.customerPhoto img,
+.customerPhoto .caption {
+    opacity: 0;
+    animation: slideUp 0.6s ease forwards;
+    animation-delay: 1.3s;         
+}
+
+.reviewPage,
+.reviewPage p, 
+.fbReviewBtn {
+    opacity: 0;
+    animation: slideUp 0.6s ease forwards;
+    animation-delay: 1.5s;  
+}

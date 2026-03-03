@@ -1,0 +1,55 @@
+.dualSection {
+    display: flex;
+    width: 100%;
+    height: auto; 
+    flex-wrap: wrap; 
+    gap: 0; 
+}
+
+.leftBody {
+    width: 75%;
+    background-color: white;
+    padding:70px 150px;
+}
+
+.rightBody {
+    width: 25%;
+    background-color: #FFD84D;
+    padding: 30px;
+    Overflow: visible; 
+}
+
+@media (max-width: 768px) {
+
+    .dualSection {
+        flex-direction: column;
+    }
+
+    .leftBody,
+    .rightBody {
+        width: 100%;          
+        padding: 20px;       /
+    }
+
+    .customerPhoto img {
+        max-height: 250px;    
+        width: 100%;          
+    }
+
+    .leftBody h2,
+    .leftBody h3,
+    .reviewPage h2 {
+        font-size: 1.4rem;
+    }
+
+    .leftBody p,
+    .reviewPage p,
+    .customerPhoto .caption {
+        font-size: 0.85rem;
+    }
+
+    .fbReviewBtn {
+        padding: 16px;
+        font-size: 0.9rem;
+    }
+}
