@@ -1,11 +1,18 @@
 [build]
-publish = "Main_Page"
+# publish from the project root so all folders are included
+publish = "."
 
-# Netlify will serve index.html from the specified publish directory.
-# If you need redirects or rewrites, you can add them below.
+# Netlify will serve files directly from the repo root.  We redirect
+# the site root to the actual homepage inside Main_Page.
 
 [redirects]
-  # catch-all to index for single page apps (optional)
+  # ensure root path serves the main index
+  from = "/"
+  to = "/Main_Page/index.html"
+  status = 200
+
+  # catch-all for single-page-app navigations within Main_Page (optional)
+  # Uncomment if you use client-side routing.
   # from = "/*"
-  # to = "/index.html"
+  # to = "/Main_Page/index.html"
   # status = 200
