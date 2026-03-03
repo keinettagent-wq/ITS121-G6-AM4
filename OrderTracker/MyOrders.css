@@ -1,0 +1,20 @@
+.order-container { max-width: 1000px; margin: 50px auto; padding: 20px; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  border-collapse: collapse; border-radius: 20px; background-color: white;}
+    
+.status-badge { padding: 5px 10px; border-radius: 15px; font-size: 0.8em; }
+        
+.bg-warning { background: #ffc107; color: #000; }
+       
+.bg-info { background: #17a2b8; color: #000; }
+       
+.bg-success { background: #28a745; color: #fff; }
+
+.bg-cancelled { background: #dc3545; color: #fff; }
+
+.mainBackground{
+   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 
+                url('myOrders.jpg'); 
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; 
+}
