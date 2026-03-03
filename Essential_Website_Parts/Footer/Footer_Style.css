@@ -1,0 +1,140 @@
+footer {
+    background-color: #ffc605;
+    padding: 20px 50px; 
+    font-family: sans-serif; 
+    padding-bottom:0;
+    position: relative;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.footer-content {
+    display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+    flex-wrap: wrap;
+    max-width: 1200px; 
+    margin: 0 auto; 
+}
+
+#logo {
+    width: 200px; 
+    height: auto;
+}
+
+.footer-links {
+    display: flex;
+    flex: 1; 
+    justify-content: center; 
+}
+
+.col {
+    padding: 5px;
+    max-width: 300px; 
+}
+
+h3 {
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+    font-weight: 800;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.badge-icon {
+    display: inline-block;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    margin-left: 10px;
+}
+
+ul {
+    list-style: none;
+}
+
+ul li {
+    margin-bottom: 8px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+    font-size: 0.8rem;
+    line-height: 1.5;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: left; 
+    gap: 20px;
+}
+
+.social-circle {
+    width: 40px;
+    height: 40px;
+    background-color: #D3D3D3;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.7rem;
+    cursor: pointer;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 0.7rem;
+    border-top: 1px solid rgba(0,0,0,0.2);
+    margin-top: 15px; 
+    padding-top: 15px;
+
+}
+
+@media (max-width: 991px) {
+    .footer-content {
+        flex-direction: column; 
+        text-align: center;     
+        justify-content: center;
+        align-items: center;
+    }
+
+    #logo {
+        margin-bottom: 30px; 
+    }
+
+    .footer-links {
+        flex-direction: column; 
+        width: 100%;            
+        gap: 20px;              
+        justify-content: center;
+        align-items: center;
+    }
+
+    .col {
+        width: 60%;
+        max-width: 500px;
+        padding-bottom: 0;    
+        padding-right: 0;          
+        padding-left: 0; 
+        border-top: 0.2px solid black;
+        padding-top: 15px;        
+    }
+
+    .social-icons {
+        justify-content: center;
+    }
+
+    .copyright {
+        font-size: 0.75rem;
+    }
+
+    h3 {
+        font-size: 1.2rem;
+    }
+    ul li a{
+        font-size: 0.9rem;
+    }
+}
+

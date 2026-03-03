@@ -1,0 +1,140 @@
+.blur-active {
+    filter: blur(8px);
+    pointer-events: none; 
+}
+
+.modal-overlay {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    visibility: hidden;
+    transition: 0.3s ease;
+    z-index: 100;
+}
+
+.modal-overlay.active {
+    opacity: 1;
+    visibility: visible;
+}
+
+.modal-box {
+    background-color: var(--primary-yellow);
+    padding: 40px;
+    border-radius: 30px;
+    border: 3px solid var(--primary-black);
+    width: 90%; 
+    max-width: 900px;
+    position: relative;
+    box-shadow: 20px 20px 50px rgba(0,0,0,0.2);
+    max-height: 70vh; 
+}
+
+.close-btn {
+    position: absolute;
+    top: -2px; right: -2px;
+    background-color: var(--primary-black);
+    color: var(--primary-yellow);
+    width: 30px; height: 30px;
+    border-radius: 50%;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+}
+
+.close-btn:hover {
+    transform: scale(1.1);
+    transition: 0.3s;
+}
+
+
+.modal-options {
+    display: flex;
+    justify-content: space-around; 
+    align-items: flex-start;
+    gap: 20px;
+    margin-top: 10px;
+    flex-wrap: wrap; 
+}
+
+
+.option-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 180px; 
+}
+
+.option-card {
+    background-color: var(--white);
+    border-radius: 50px;
+    height: 180px; 
+    width: 100%; 
+    object-fit: contain; 
+    padding: 20px; 
+    box-shadow: 0 0 5px 1px black;
+    background-clip: content-box; 
+}
+
+@keyframes Animation {
+    50%{
+        transform: scale(1.1);
+        box-shadow: 3px 3px 3px 0.4px black;
+    }
+    75%{
+        transform: scale(1.05);
+        box-shadow: 1px 1px 3px 0.4px black;
+    }
+    100%{
+        transform: scale(1);
+        box-shadow: 2px 2px 3px 0.4px black;
+    }
+}
+
+.option-card:hover{
+    animation-name: Animation;
+    animation-duration: 0.4s;
+    box-shadow: 2px 2px 3px 0.4px black;
+}
+
+.label-text {
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1rem;
+    color: var(--primary-black);
+}
+
+@media (max-width: 991px) {
+    .option-item {
+        width: 100%; 
+        flex-direction: row; 
+        align-items: center;
+        text-align: left;
+        background: rgba(255,255,255,0.5); 
+        border-radius: 20px;
+        padding: 10px;
+    }
+
+    .option-card {
+        height: 60px;
+        width: 60px;
+        border-radius: 15px;
+        margin-right: 15px;
+        padding: 5px;
+    }
+
+    .label-text {
+        margin-top: 0;
+        font-size: 25px;
+        }
+    }
+        

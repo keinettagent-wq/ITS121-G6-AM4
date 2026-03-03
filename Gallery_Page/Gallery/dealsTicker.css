@@ -1,0 +1,27 @@
+.mainTicker {
+    background-color: #FFD700;  
+    overflow: hidden;          
+    white-space: nowrap;       
+    width: 100%;
+    padding: 15px 0;
+    box-sizing: border-box;
+}
+
+.tickerWrapper {
+    display: inline-flex;
+    white-space: nowrap;        
+    animation: menuScroll 30s linear infinite; 
+}
+
+.tickerWrapper span {
+    display: inline-block;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Arial Black', sans-serif;
+    margin: 0;
+}
+
+@keyframes menuScroll {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); } 
+}

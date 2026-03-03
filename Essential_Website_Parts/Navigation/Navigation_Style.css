@@ -1,0 +1,157 @@
+:root {
+    --primary-yellow: #ffc605; 
+    --primary-black: #000000;
+    --white: #ffffff;
+    --border-radius: 15px;
+}
+
+/* Navigation Logo Properties and Animation****************************************************************************/
+    #nav_logo {
+        width: 230px;
+        height: 45px;
+        border-radius: 15px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    @keyframes myAnimation {
+        0%{
+            opacity: 25%;
+            transform: scale(0.7);
+        }
+        60%{
+            opacity: 75%;
+            transform: scale(1.4);
+        }
+        100%{
+            opacity: 100%;
+            transform: scale(1);
+        }
+    }
+
+    #nav_logo:hover{
+        animation-name: myAnimation;
+        animation-duration: 0.35s;
+    }
+
+
+/* Navigation Links Properties and Hover Effects**************************************************************************/
+    .custom-navbar {
+        background-color: var(--primary-yellow);
+        padding: 1rem 3rem; 
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        z-index: 10;
+    }
+    .navbar-nav .nav-link {
+        color: var(--primary-black);
+        font-size: 1.1rem;
+        padding: 10px 16px!important; 
+        border-radius: 15px;
+        transition: all 0.1s ease; 
+        margin-left: 18px; 
+    }
+
+    .navbar-nav .nav-link:hover, .navbar-nav .nav-link.active {
+        background-color: var(--primary-black);
+        color: var(--primary-yellow);
+        transform: scale(1.1);
+    }
+  
+    @keyframes myAnimation_Nav {
+        0%{
+            opacity: 25%;
+            transform: scale(0.8);
+        }
+        60%{
+            opacity: 75%;
+            transform: scale(1.2);
+        }
+        100%{
+            opacity: 100%;
+            transform: scale(1);
+        }
+    }
+
+    .nav-item:hover{
+        animation-name: myAnimation_Nav;
+        animation-duration: 0.25s;
+    }
+
+    .navbar-toggler {
+        border: 2px solid var(--primary-black);
+    }
+    .navbar-nav {
+        padding-top: 7px;
+    }
+
+    #navbar {
+        align-items: center;
+        padding:10px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* Login */
+
+    .userIcon {
+        width: 30px; 
+        height: 30px;
+        border-radius: 50%; 
+        object-fit: cover;
+    } 
+
+    #nav-username{
+        font-size: 12px;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: bold;
+        margin-left: 5px;
+        transition: color 0.1s ease;
+        display: none;
+    }
+
+    .nav-item:hover .userIcon {
+    
+    filter: invert(79%) sepia(85%) saturate(1355%) hue-rotate(359deg) brightness(102%) contrast(105%);
+}   
+
+    @media (max-width: 991px) {
+        .custom-navbar {
+            padding: 1rem 1rem; 
+        }
+        .navbar-nav {
+            margin-top: 20px;
+            text-align: center;
+        }
+        .navbar-nav .nav-link {
+            margin-bottom: 10px;
+            display: inline-block; 
+            font-size: 1.5rem;
+        }
+
+        @keyframes myAnimation {
+            0% {
+                opacity: 0.25;
+                transform: translateX(-50%) scale(0.7);
+            }
+            60% {
+                opacity: 0.75;
+                transform: translateX(-50%) scale(1.4);
+            }
+            100% {
+                opacity: 1;
+                transform: translateX(-50%) scale(1);
+            }
+        }
+
+        #nav_logo:hover {
+            animation: myAnimation 0.35s ease;
+        }
+
+        #nav_logo {
+            position: absolute;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%) scale(1);   
+        }
+    }
+

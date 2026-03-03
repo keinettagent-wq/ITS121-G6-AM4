@@ -1,0 +1,104 @@
+.menuHeadCont {
+    background-color:cornsilk;
+    width:100%;
+    min-height: 500px;
+    display: flex;
+    align-items: center;        
+    justify-content: center;  
+    margin: 0;
+    position: relative; 
+    overflow: hidden;
+}
+
+.menuHeadCont h1{
+    position: relative;
+    display: inline-block;  
+    padding: 20px;
+    font-size: 50px;
+    z-index:1;
+    font-family: 'Arial Black', sans-serif;
+    transform: translateY(50px);
+    opacity:0;
+    animation: textSlideUp 0.8s ease forwards 0.5s; 
+}
+
+.menuHeadCont h1::before {
+    content: "";
+    position: absolute;
+    left: 50%; 
+    top: 60%;
+    width: 110%;
+    height: 13px;
+    background-color: yellow;
+    z-index: -1;
+    border-radius: 4px;
+    transform: translateX(-50%);
+    opacity: 0;
+    animation: highlightSlideUp 0.8s ease forwards 0.5s;
+}
+
+.menu-img {
+    height: 60px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    width: 450px;  
+    height: auto;   
+}
+
+.menu-img.left {
+    left: 40px;
+    transform: translateX(-100px) translateY(-50%);
+    animation: slideLeft 1.0s ease forwards 0.7s;
+}
+
+.menu-img.right {
+    right: 40px;
+    transform: translateX(100px) translateY(-50%);
+    animation: slideRight 1.0s ease forwards 0.7s;
+}
+   
+@keyframes textSlideUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes highlightSlideUp {
+    from {
+        top: 85%;
+        opacity: 0;
+    }
+    to {
+        top: 60%;
+        opacity: 1;
+    }
+}
+
+@keyframes slideLeft {
+    from {
+        transform: translateX(-100px) translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(-50%);
+        opacity: 1;
+    }
+}
+
+@keyframes slideRight {
+    from {
+        transform: translateX(100px) translateY(-50%);
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0) translateY(-50%);
+        opacity: 1;
+    }
+}

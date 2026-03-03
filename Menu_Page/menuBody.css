@@ -1,0 +1,78 @@
+.menuBody{
+    background-color: white;
+    padding:70px 150px;
+}
+
+.food-card {
+    position: relative;
+    width: 250px;      
+    height: 350px;    
+    overflow: hidden;   
+    border-radius: 20px; 
+    cursor: pointer;
+    opacity: 0;                
+    transform: translateY(50px); 
+    animation: fadeUp 0.8s ease forwards;
+}
+
+
+.food-card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;  
+    transition: transform 0.5s ease; 
+    border-radius: inherit;
+}
+
+
+.food-card:hover img {
+    transform: scale(1.2);
+}
+
+
+.food-card .food-name {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.7); 
+    pointer-events: none; 
+    text-align: center; 
+}
+
+/* food grid container */
+    .food-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 35px;
+    }
+
+    .food-card {
+    width: 100%;
+    }
+
+    .food-card:nth-child(2n) {
+    justify-self: end; 
+    }
+
+.food-card:nth-child(1) { animation-delay: 1.1s; }
+.food-card:nth-child(2) { animation-delay: 1.2s; }
+.food-card:nth-child(3) { animation-delay: 1.3s; }
+.food-card:nth-child(4) { animation-delay: 1.4s; }
+.food-card:nth-child(5) { animation-delay: 1.5s; }
+.food-card:nth-child(6) { animation-delay: 1.6s; }
+
+
+@keyframes fadeUp {
+    from {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

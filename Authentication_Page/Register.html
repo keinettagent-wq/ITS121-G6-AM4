@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+        <title> Yes Papa! | Register </title>
+        <link rel="icon" type="image/x-icon" href="../Essential_Website_Parts/Logo_Favicon.ico">
+
+        <!-- Navigation Bar [Style(CSS) and Script(JavaScript)]-->
+        <link rel="stylesheet" href="../Essential_Website_Parts/Navigation/Navigation_Style.css">
+        <script src="../Essential_Website_Parts/Navigation/Navigation_Script.js" defer></script> 
+
+        <!-- Footer [Style(CSS) and Script(JavaScript)]-->
+        <link rel="stylesheet" href="../Essential_Website_Parts/Footer/Footer_Style.css">
+
+        <!-- OrderNowPopUp [Style(CSS) and Script(JavaScript])-->
+        <link rel="stylesheet" href="../Essential_Website_Parts/OrderNowPopUp/OrderNowPopUp.css">
+        <script src="../Essential_Website_Parts/Navigation/Navigation_Script.js" defer></script> 
+        <script src="../Essential_Website_Parts/OrderNowPopUp/OrderNowPopUp_Script.js" defer></script> 
+        
+        <!-- Bootstrap CSS-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <link rel="stylesheet" href="../Gallery/GalleryHead.css">
+        <link rel="stylesheet" href="../Gallery/dealsTicker.css">
+        <link rel="stylesheet" href="../Gallery/GalleryBody.css">
+        <link rel="stylesheet" href="../Gallery/PromoBody.css">
+
+        <link rel="stylesheet" href="Account/Login.css">
+        <link rel="stylesheet" href="Account/Register.css">
+
+        <script src="Account/Register.js" defer></script> 
+
+        <style>
+            * {
+                box-sizing: border-box;
+                font-family: 'MyFont';
+            }
+            html, body {
+                height: 100%;
+                margin: 0;
+                
+            }
+            body {
+                background-color: white;
+                display: flex;
+                flex-direction: column;
+                scroll-behavior: smooth;
+            }
+            @font-face {
+                font-family: 'MyFont';
+                src: url("../Essential_Website_Parts/Nexa-Heavy.ttf");
+            }      
+            main {
+                flex: 1;
+            }
+        </style>
+
+    </head> 
+
+    <body> 
+        <!--Navigation Bar-->
+        <nav class="navbar navbar-expand-lg navbar-light custom-navbar" id="navbar">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img src="../Essential_Website_Parts/Navigation/Yes_Papa_atNav.png" id="nav_logo" alt="Logo"
+                    onmouseover="this.src='../Essential_Website_Parts/Navigation/Yes_Papa_atNav_Inverted.png'"
+                    onmouseout="this.src='../Essential_Website_Parts/Navigation/Yes_Papa_atNav.png'">
+                </a>
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" 
+                aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="../Main_Page/index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Menu_Page/Menu.html">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link orderBtn" href="#">Order Now!</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../AboutUs_Page/AboutUs.html">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Gallery_Page/Gallery.html">Gallery</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../Reviews_Page/Reviews.html">Reviews</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../OrderTracker/MyOrders.html">My Orders</a></li>
+
+                         <script src="../Authentication_Page/AccountStatus.js" defer></script> 
+                        <li class="nav-item" id="user-auth-tab">
+                            <a class="nav-link" href="../Authentication_Page/Login.html">
+                                <img src="../Essential_Website_Parts/Icons/User.png" alt="User" class="userIcon">
+                                <span id="nav-username"></span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>        
+
+        <!-- Specific Content of this Webpage -->
+       <main class="register-wrapper">
+            <section class="register-box">
+                <div class="register-header">
+                    <h2>Sign Up</h2>
+                    <p>Sali na sa <span>Yes Papa!</span> Family!</p>
+                </div>
+
+                <form id="registerForm">
+                    <div class="input-group">
+                        <label for="username">Username</label>
+                        <input type="text" id="username" placeholder="Choose a username" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Create a password" required>
+                    </div>
+
+                    <button type="submit" class="register-btn">REGISTER</button>
+                </form>
+
+                <div class="register-footer">
+                    <p>Already have an account? <a href="Login.html">Login here</a></p>
+                </div>
+            </section>
+        </main>
+        <!--Footer-->
+        <footer>
+            <div class="footer-content">
+                
+                <img src="../Essential_Website_Parts/Logo.png" id="logo" alt="Restaurant: Yes Papa! Logo">
+
+                <div class="footer-links">
+                    
+                    <div class="col">
+                        <h3>Navigation <img src="../Essential_Website_Parts/Icons/Navigation_Icon.png" class="badge-icon" alt=""></h3>
+                        <ul>
+                            <li><a href="../Main_Page/index.html">Home</a></li>
+                            <li><a href="../Menu_Page/Menu.html">Menu</a></li>
+                            <li><a href="../AboutUs_Page/AboutUs.html">About Us</a></li>
+                            <li><a href="../Gallery_Page/Gallery.html">Gallery</a></li>
+                            <li><a href="../Reviews_Page/Reviews.html">Reviews</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h3>Contact <img src="../Essential_Website_Parts/Icons/Contact_Icon.png" class="badge-icon" alt=""></h3>
+                        <ul>
+                            <li><a href="mailto:email@gmail.com">markjustine.badilles@gmail.com</a></li>
+                            <li><a href="tel:+639210602045">(63+) 921-060-2045</a></li>
+                        </ul>
+                        <div class="social-icons">&nbsp;&nbsp;&nbsp;&nbsp;
+                            <a href="https://web.facebook.com/profile.php?id=61584903151679" target="_blank" rel="noopener noreferrer">
+                                <img src="../Essential_Website_Parts/Icons/Facebook_Icon.png" class="social-circle">
+                            </a>
+                            <a href="https://www.instagram.com/yespapaofficial/" target="_blank" rel="noopener noreferrer">
+                                <img src="../Essential_Website_Parts/Icons/Instagram_Icon.png" class="social-circle">
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <h3>Location <img src="../Essential_Website_Parts/Icons/Location_Icon.png" class="badge-icon" alt=""></h3>
+                        <ul>
+                            <li>
+                                <a href="https://www.google.com/maps/place/Yes+Papa+Sizzling,+Silog+at+Pares/@14.5731648,121.0341726,20.33z/data=!4m6!3m5!1s0x3397c981f3280ee7:0x1c6aa330d92d8cea!8m2!3d14.573019!4d121.034312!16s%2Fg%2F11st_z45_x?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+                            2 Laura St., Brgy. Plainview, Mandaluyong City</a>
+                            </li>
+                        </ul> 
+
+                        <h3>Open Hours <img src="../Essential_Website_Parts/Icons/OperatingHours_Icon.png" class="badge-icon" alt=""></h3>
+                        <br>
+                        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;5:00 PM - 2:00 AM</span>
+                    </div>
+                </div> 
+            </div>
+
+            <div class="copyright">
+                <p>Copyright &copy; 2026 Yes Papa! &nbsp;&nbsp; All rights reserved.</p>
+                <p>Website Designed by - De Vera, Ashley Rayne A. • Gonzales, Fhidllan B. • Regala, Miko Miguel J. • Timkang, Johanna Charisse B. </p>
+            </div>
+        </footer>
+
+    <div class="modal-overlay" id="modalOverlay">
+        <div class="modal-box">
+            <button class="close-btn" id="closeBtn">&times;</button>
+            
+            <div class="modal-options">
+                <div class="option-item">
+                    <a href="https://www.foodpanda.ph/restaurant/pzn6/yes-papa-laura-street" target="_blank" rel="noopener noreferrer">
+                        <img src="../Essential_Website_Parts/Icons/FoodPanda_Logo.png" class="option-card" alt="Food Panda">
+                    </a>
+                    <div class="label-text">Food Panda</div>
+                </div>
+
+                <div class="option-item">
+                    <a href="../Order_Page/Order.html">
+                        <img src="../Essential_Website_Parts/Icons/Order_Icon.png" class="option-card" alt="Order Form">
+                    </a>
+                    <div class="label-text">Order via Website</div>
+                </div>
+
+                <div class="option-item">
+                    <a href="https://web.facebook.com/profile.php?id=61584903151679" target="_blank" rel="noopener noreferrer">
+                        <img src="../Essential_Website_Parts/Icons/Facebook_Logo.png" class="option-card" alt="Facebook">
+                    </a>
+                    <div class="label-text">Facebook Page</div>
+                </div>
+
+                <div class="option-item">
+                    <a href="https://www.google.com/maps/place/Yes+Papa+Sizzling,+Silog+at+Pares/@14.5731648,121.0341726,20.33z/data=!4m6!3m5!1s0x3397c981f3280ee7:0x1c6aa330d92d8cea!8m2!3d14.573019!4d121.034312!16s%2Fg%2F11st_z45_x?entry=ttu&g_ep=EgoyMDI2MDExMy4wIKXMDSoASAFQAw%3D%3D" target="_blank" rel="noopener noreferrer">
+                        <img src="../Essential_Website_Parts/Icons/Restaurant_Icon.png" class="option-card" alt="Restaurant">
+                    </a>
+                    <div class="label-text">Visit our Restaurant!</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    </body>
+</html>

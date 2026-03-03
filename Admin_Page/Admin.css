@@ -1,0 +1,183 @@
+
+.admin-container {
+    display: flex;
+    min-height: 600px;
+    background-color: #f8f9fa;
+    align-items: stretch;
+    width: 100%;
+    position: relative;
+}
+
+.admin-sidebar {
+    width: 280px;
+    background: #212529;
+    color: white;
+    padding: 30px 20px;
+    flex-shrink: 0;
+}
+
+.admin-profile {
+    text-align: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #3d4145;
+    padding-bottom: 20px;
+}
+
+.admin-profile img {
+    width: 80px;
+    filter: invert(1);
+    margin-bottom: 10px;
+}
+
+.admin-nav .nav-link {
+    width: 100%;
+    text-align: left;
+    color: #adb5bd;
+    padding: 12px 15px;
+    border: none;
+    background: none;
+    transition: 0.3s;
+    border-radius: 8px;
+    margin-bottom: 5px;
+}
+
+.admin-nav .nav-link.active, .admin-nav .nav-link:hover {
+    background: #ffc605;
+    color: black !important;
+}
+
+.admin-content {
+    flex: 1;
+    padding: 40px;
+    display: block;
+
+}
+
+.content-block {
+    background: white;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+    height: 100%; 
+    display: flex;
+    flex-direction: column;
+}
+
+
+.table-scroll-wrapper {
+    margin-top: 15px;
+    background: white;
+    border-radius: 10px;
+    border: 1px solid #dee2e6;
+   
+    max-height: 550px; 
+    overflow-y: auto; 
+    position: relative;
+}
+
+/* Table Styling */
+.admin-table {
+    margin-bottom: 0px
+}
+
+.admin-table thead {
+    
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
+
+.admin-table th {
+    background-color: #212529 !important;
+    color: #ffc605 !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 16px;
+    padding: 15px;
+    border: none;
+}
+
+.admin-table td {
+    vertical-align: middle;
+    padding: 12px;
+}
+
+.admin-table td:nth-child(3) {
+    max-width: 200px;
+    position: relative;
+}
+
+.address-cell {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: block;
+    width: 100%;
+    cursor: help;
+}
+
+.admin-table td:nth-child(3):hover .address-cell {
+    white-space: normal;
+    overflow: visible;
+    background: #fffde7;
+    border: 1px solid #ffc605;
+    padding: 5px;
+    border-radius: 4px;
+    position: absolute;
+    z-index: 100;
+    width: 250px; 
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+.status-pending { 
+    color: #ff9800; 
+    font-weight: bold; }
+
+.status-completed {
+     color: #4caf50; 
+     font-weight: bold; }
+
+.btn-view {
+    background-color: #ffc605;
+    border: none;
+    font-size: 0.8rem;
+    padding: 5px 12px;
+    border-radius: 5px;
+    transition: 0.2s;
+}
+
+.btn-view:hover {
+    background-color: #000;
+    color: #ffc605;
+}
+
+
+/* modal */
+
+
+
+#orderDetailsModal .table thead th {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    color: black;
+    z-index: 10;
+    border-bottom: 2px solid var(--primary-white);
+    text-align: center;
+}
+
+#orderDetailsModal  thead {
+    border: 2px solid black;
+}
+
+#orderDetailsModal .modal-body {
+    max-height: 70vh;
+    overflow-y: auto;
+    text-align: center;
+}
+
+.btn-outline-danger:hover {
+    background-color: #fee2e2; 
+    transform: scale(1.1);
+    transition: 0.2s;
+}
