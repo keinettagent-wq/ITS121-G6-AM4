@@ -5,7 +5,8 @@ publish = "."
 # Netlify will serve files directly from the repo root.  We redirect
 # the site root to the actual homepage inside Main_Page.
 
-[redirects]
+# Redirect rules must be defined as an array of tables.
+[[redirects]]
   # ensure root path serves the main index
   from = "/"
   to = "/Main_Page/index.html"
