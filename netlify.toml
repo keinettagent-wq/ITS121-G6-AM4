@@ -1,0 +1,11 @@
+[build]
+publish = "Main_Page"
+
+# Netlify will serve index.html from the specified publish directory.
+# If you need redirects or rewrites, you can add them below.
+
+[redirects]
+  # catch-all to index for single page apps (optional)
+  # from = "/*"
+  # to = "/index.html"
+  # status = 200
